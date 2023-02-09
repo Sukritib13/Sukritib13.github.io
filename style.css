@@ -1,0 +1,164 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 800px){
+    .container {
+        display: block;
+        flex-wrap: wrap;
+    }
+
+    .left {
+        border-right: 0px;
+        border-bottom: 1px solid rgb(106, 90, 90);
+        padding-bottom: 20px;
+        padding-top: 20px;
+
+    }
+
+    .right {
+        padding-top: 20px;
+    }
+
+    .right p {
+        font-family:  Arial, Helvetica, sans-serif;
+        font-size: x-large;
+        color: rgb(100, 5, 80);
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 800px){
+    .main {
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        height:80vh;
+    }
+
+    .left {
+        border-right: 1px solid rgb(106, 90, 90);
+        padding: 100px; 
+        padding-top: 0px;
+        padding-right: 30px;
+        width: 30%;
+        
+    }
+
+    .right {
+        width: 70%;
+        padding: 100px;
+        padding-top: 0px;
+        padding-left: 30px;
+        
+    }
+
+    .right p {
+        font-family:  Arial, Helvetica, sans-serif;
+        font-size: x-large;
+        color: rgb(100, 5, 80);
+    }
+}
+
+.header {
+    display: flex;
+    border-top: 3px solid rgb(94, 24, 117);
+    border-bottom: 1px solid gray;
+    font-size: 15px;
+    font-family:  Arial, Helvetica, sans-serif;
+    justify-content: center;
+    column-gap: 50px;
+    padding: 10px;
+    padding-bottom: 5px;
+    height: 5%;
+
+
+}
+
+
+.picture {
+    border-radius: 50%;
+    width: 200px; 
+    height: 200px; 
+}
+
+.left a {
+    color: rgb(125, 49, 151);
+    text-decoration: none;
+}
+
+
+
+.footer {
+    border-top: 1px solid rgb(149, 140, 140);
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    padding: 10px;
+    padding-bottom: 0px;
+    height:5%;
+}
+
+.header a {
+    color: rgb(119, 105, 105);
+    text-decoration: none;
+}
+
+
+.header a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+.link a {
+    color: rgb(142, 3, 142);
+    text-decoration: none;
+}
+
+.right h5 {
+    color: rgb(145, 144, 144);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.education {
+    padding-left: 150px;
+}
+
+.label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.right a {
+    text-decoration: none;
+    color: rgb(142, 3, 142);
+}
+
+.right li {
+    margin-bottom: 15px;
+}
+
+.right ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.right li::before {
+    content: "- ";
+    font-weight: bold;
+}
+
+.centre {
+    text-align: center;
+}
+
+.progress {
+    width: 500px;
+    height: 25px;
+}
